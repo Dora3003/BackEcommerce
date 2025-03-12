@@ -1,5 +1,5 @@
 # First stage: build the app
-FROM openjdk:17-jdk-slim AS build
+FROM openjdk:21-jdk-slim AS build
 
 # Install Maven
 RUN apt-get update && apt-get install -y maven
