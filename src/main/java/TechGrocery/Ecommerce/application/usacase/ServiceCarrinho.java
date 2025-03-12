@@ -11,10 +11,6 @@ public class ServiceCarrinho {
     }
 
     public Object removerProduto(){
-<<<<<<< HEAD
-=======
-
->>>>>>> 3b5083190368e84864cd7d8b81c2c887045988cc
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

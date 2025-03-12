@@ -45,7 +45,7 @@ public class Controller {
 
     @DeleteMapping("/DeletarProduto")
     public Object DeletarProduto(@RequestBody Produto produto){
-        return serviceProduto.deletarProduto(produto.getiCodigo());
+        return serviceProduto.deletarProduto(String.valueOf(produto.getiCodigo()));
     }
 
     //Cartão
