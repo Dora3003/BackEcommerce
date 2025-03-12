@@ -1,10 +1,8 @@
 # First stage: build the app
-FROM ubuntu:latest AS build
+FROM openjdk:17-jdk-slim AS build
 
-# Install dependencies: JDK and Maven
-RUN apt-get update
-RUN apt-get install openjdk-17-jdk -y
-RUN apt-get install maven -y
+# Install Maven
+RUN apt-get update && apt-get install -y maven
 
 # Set the working directory and copy the project files
 WORKDIR /app
